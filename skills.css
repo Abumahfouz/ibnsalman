@@ -1,0 +1,139 @@
+.main {
+    position: relative;
+    height: 75vh;
+}
+.skill-bars span {
+    display: block;
+}
+.skill-graphics h3 {
+    text-align: center;
+}
+.skill-bars{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0
+}
+.skill-bars input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+input[type="range"]::-webkit-slider-runnable-track
+{
+    height: 3rem;
+    background: linear-gradient(#ffc);
+    /* background: -webkit-linear-gradient(#ffe, #cce); */
+    border-radius: 3rem;
+}
+input[type="range"]::-moz-range-track
+{
+    height: 3rem;
+    background: linear-gradient(#ffc);
+    /* background: -webkit-linear-gradient(#ffe, #cce); */
+    border-radius: 3rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 3rem;
+    width: 3rem;
+    background: linear-gradient(2000deg, rgb(0, 211, 211),rgb(154, 250, 245));
+    box-shadow: -20rem 0 0 20rem rgb(0, 211, 211);
+}
+.skill-bars .left .flex-box,
+.skill-bars .right .flex-box {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem;
+}
+.flex-item-bar label {
+    display: block;
+    text-align: right;
+}
+
+@media screen and (max-width:850px){
+    header img {
+        height: 50px;
+        width: 50px;
+    }
+    .skill-graphics h3 {
+        font-size: 2.2rem;
+    }
+    .dock span {
+        top: 5vh;
+    }
+    #peek {
+        top: 5vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main {
+        min-height: 100vh !important;
+    }
+    .dock span {
+        position: fixed;
+        top: 80vh;
+        left: 5vw;
+    }
+    #peek {
+        top: 0;
+        left: 0;
+        height: 60vh;
+    }
+    .skill-bars{
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 0
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .dock span {
+        top: -95vh;
+        right: 5vw;
+    }
+    .exp-card {
+        min-height: 65vh;
+        width: 90vw;
+    }
+    .exp-card h3, .exp-card h4 {
+        font-size: 1.3rem;
+    }
+    header img {
+        height: 30px;
+        width: 30px;
+    }
+    header .mail {
+        font-size: 1.2rem;
+    }
+    .skill-bars .left .flex-box,
+.skill-bars .right .flex-box {
+    justify-content: left;
+    align-items: flex-start;
+}
+    .skill-bars input[type="range"] {
+        width: 20rem;
+        border-radius: 3rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .dock span {
+        top: -95vh;
+        right: 10vw;
+    }
+    .skill-bars input[type="range"] {
+        width: 15rem;
+    }
+    .flex-item-icon img{
+        height: 40px;
+        width: 40px;
+    }
+}

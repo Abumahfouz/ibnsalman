@@ -1,0 +1,193 @@
+body {
+    background: #070707 url(img/lattice_fade_pattern.png) top right no-repeat;
+    background-size: 20%;
+}
+.main {
+    height: 75vh;
+}
+.about-selfie {
+    width: 20vw;
+    height: 45vh;
+    background: url('img/mz3.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
+.about-text {
+    width: 35vw;
+    align-self: center;
+    font-size: 2rem;
+    text-align: justify;
+}
+.about-selfie,
+.about-text {
+    margin: 0 2rem;
+}
+h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.about-contents {
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+}
+@keyframes glow {
+    20% {
+        color: #fff;
+    }
+    60% {
+        color: #ffb6b6;
+    }
+    100% {
+        color: #ff6e6e;
+    }
+}
+.hire {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border: 0.1rem solid #fff;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    animation: glow 0.8s alternate-reverse infinite;
+}
+.hire:hover{
+    background-color: #fff;
+    color: #070707;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    animation: none;
+}
+@media screen and (max-width: 1400px) {
+    body {
+        background-position: bottom right;
+        background-size: 30%;
+    }
+    .about-selfie {
+        width: 25vw;
+        height: 40vh;
+        align-self: center;
+    }
+    .hire {
+        font-size: 1.6rem;
+        border-radius: 1rem;
+    }
+    .about-text {
+        width: 35vw;
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    body {
+        background-position: bottom left;
+        background-size: 40%;
+    }
+    .about-selfie {
+        width: 25vw;
+        height: 30vh;
+        align-self: center;
+    }
+    h3.about-header {
+        font: 2rem;
+    }
+    .hire {
+        font-size: 1.5rem;
+    }
+    .about-text {
+        width: 35vw;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    body {
+        background-position: bottom left;
+        background-size: 40%;
+    }
+    .about-selfie {
+        width: 25vw;
+        height: 30vh;
+        align-self: center;
+    }
+    h3.about-header {
+        font: 2rem;
+    }
+    .hire {
+        font-size: 1.5rem;
+    }
+    .about-text {
+        width: 35vw;
+        font-size: 1.4rem;
+    }
+    .dock span {
+        top: -55vh;
+        left: 5vw;
+    }
+    #peek {
+        top: 28vh;
+        left: 5vw;
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main h3.about-header {
+        font-size: 2.4rem;
+    }
+    .hire {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border-radius: 0.8rem;
+    }
+    .about-text {
+        width: 35vw;
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    body {
+        background-size: 60%;
+    }
+    .about-contents {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-selfie {
+        width: 50%;
+        height: 30vh;
+        order: 2;
+    }
+    .about-text {
+        padding: 2rem;
+        width: 100%;
+        order: 2;
+    }
+    h3 {
+        order: 1;
+        font-size: 1.8rem !important;
+    }
+    .hire {
+        font-size: 1.5rem;
+    }
+    .dock span {
+        top: -70vh;
+        left: 5vw;
+    }
+}
+@media screen and (max-width: 315px) {
+    h3 {
+        display: none;
+    }
+    .dock span {
+        top: 0;
+        right: 5vw !important;
+    }
+    #peek {
+        top: 40vh;
+        left: 5vw;
+        height: 40vh;
+    }
+}

@@ -1,0 +1,124 @@
+body {
+    background: #070707 url(img/lattice_fade_pattern.png) top right no-repeat;
+    background-size: 30%;
+}
+.nav-links {
+    margin-bottom: 6rem;
+}
+.projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 20rem;
+    height: auto;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.project-item {
+    position: relative;
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(255, 255, 234);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+.project-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(177, 159, 159, 0.4);
+    border-radius: 2rem;
+}
+.project-text {
+    position: inherit;
+    bottom: 2rem;
+    left: 1rem;
+}
+.hidden {
+    display: none;
+}
+.olam {
+    background: #0e0e0e url('img/olam-group-recreation.jpg') center no-repeat;
+    background-size: contain;
+}
+.paystack {
+    background: #0e0e0e url('img/paystack.jpg') center no-repeat;
+    background-size: contain;
+}
+.piggyvest {
+    background: #0e0e0e url('img/piggyvest.jpg') center no-repeat;
+    background-size: contain;
+}
+.doordash {
+    background: #0e0e0e url('img/doordash.jpg') center no-repeat;
+    background-size: contain;
+}
+.n26{
+    background: #0e0e0e url('img/n26.jpg') center no-repeat;
+    background-size: contain;
+}
+.palmpay {
+    background: #0e0e0e url('img/palmpay.jpg') center no-repeat;
+    background-size: contain;
+}
+.netflix {
+    background: #0e0e0e url('img/netflix.jpg') center no-repeat;
+    background-size: contain;
+}
+.nirsal {
+    background: #0e0e0e url('img/nirsal-mfb.jpg') center no-repeat;
+    background-size: contain;
+}
+.booking {
+    background: #0e0e0e url('img/booking.jpg') center no-repeat;
+    background-size: contain;
+}
+.project-text a {
+    color: #e6e6e6;
+    font-weight: 500;
+}
+.project-text a:hover{
+    color: #fff;
+    font-weight: 700;
+}
+@media screen and (max-width: 1600px) {
+    .nav-links {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .nav-links {
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 65vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    .nav-links {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 850px) {
+    .nav-links {
+        width: 100vw;
+    }
+    .title h2 {
+        font-size: 1.4rem;
+    }
+    .title h1 {
+        font-size: 3rem;
+    }
+    .selfie {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-links {
+        width: 100vw;
+    }
+
+}

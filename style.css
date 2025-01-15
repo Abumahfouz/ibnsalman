@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+body {
+    background: #070707 url('img/react-2.svg') no-repeat;
+    background-blend-mode: soft-light;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+    font-family: "poppins", sans-serif;
+    width: 100vw;
+}
+.flex-box {
+    display: flex;
+}
+.selfie {
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    background: url('img/mz2.jpg');
+    background-position: center;
+    background-size: contain;
+}
+header {
+    justify-content: space-between;
+    padding: 1rem 8rem;
+    align-content: center;
+    align-items: center;
+    height: 20vh;
+}
+header a {
+    align-self: center;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+}
+header .mail:hover{
+    border: 0.1rem solid #fff;
+    border-radius: 2rem;
+}
+.hero {
+    margin-top: 10rem;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.hero div {
+    align-self: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    text-align: center;
+}
+.title h2 {
+    color: #dadada;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.title h1 {
+    font-size: 4rem;
+}
+#peek {
+    display: none;
+}
+.nav-links {
+    width: 35vw;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border: 0.1rem solid #fff;
+    padding: 1.4rem 3rem;
+    border-radius: 2rem;
+}
+.nav-links a:hover{
+    background-color: #fff;
+    color: #070707;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.hide {
+    display: none;
+}
+.dock{
+    padding: 2rem;
+    position: relative;
+    display: none;
+}
+.dock span {
+    position: absolute;
+    top: -5vh;
+    display: flex;
+    border-radius: 100%;
+    border: 0.5rem solid #fff;
+    height: 4rem;
+    width: 4rem;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.dock span:hover {
+    cursor: pointer;
+}
+.dock i{
+    align-self: center;
+    color: #fff;
+    font-size: 2.4rem;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+.active {
+    background-color: #fff !important;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;  
+}
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background: #070707;
+}
+footer p {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .nav-links {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .nav-links {
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 65vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    .nav-links {
+        width: 80vw;
+    }
+    .nav-links a {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+    #peek {
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    header {
+        padding: 1rem 3rem;
+    }
+    header a {
+        font-size: 1.6rem;
+        padding: 1rem 1.6rem;
+    }
+
+    .nav-links, .hide {
+        display: none !important;
+    }
+    #peek {
+        position: absolute;
+        left: 0;
+        bottom: 10vh;
+        display: flex;
+        width: 40vw !important;
+        height: 70vh;
+        background: #fff;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #peek a {
+        text-decoration: none;
+        color: #070707;
+        font-size: 1.6rem;
+        border: 0.8rem solid #fff;
+        padding: 1.4rem 2rem;
+        border-radius: 0;
+        background: #dadada;
+    }
+    #peek a:hover{
+        background-color: #bbb;
+        color: #070707;
+        border: 1rem solid #fff;
+        transition: all 0.2s ease-in-out;
+    }
+    .title h2 {
+        font-size: 1.4rem;
+    }
+    .title h1 {
+        font-size: 3rem;
+    }
+    .selfie {
+        height: 20rem;
+        width: 20rem;
+    }
+    .dock {
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        padding: 1rem 3rem;
+    }
+    header a {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-links {
+        width: 100vw;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    header img {
+        height: 30px;
+        width: 30px;
+    }
+    .mail {
+        font-size: 1rem;
+    }
+    #peek a {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border: 0.4rem solid #fff;
+    }
+}

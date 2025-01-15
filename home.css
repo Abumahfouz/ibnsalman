@@ -1,0 +1,19 @@
+@media screen and (max-width: 850px) {
+    .dock span {
+        position: fixed;
+        top: 90vh;
+        left: 5vw
+    }
+}
+@media screen and (max-width: 600px) {
+    .dock span {
+        top: 80vh;
+        left: 5vw;
+    }
+    #peek {
+        top: 0;
+        left: 0;
+        height: 60vh;
+    }
+
+}

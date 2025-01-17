@@ -7,6 +7,9 @@ body {
     justify-content: space-evenly;
     font-size: 1.4rem;
 }
+.slide-btn {
+    display: none;
+}
 h3 {
     font-size: 2.2rem;
 }
@@ -111,8 +114,29 @@ h4 {
         width: 50px;
     }
     .exp-contents{
+        position: relative;
         min-height: 80vh;
         font-size: 1.3rem;
+    }
+    .slide-btn {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 5vw;
+    }
+    .prev {
+        left: 8%;
+    }
+    .next {
+        right: 8%;
+    }
+    .slide-btn button {
+        background: #292929;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 1rem;
     }
     .exp-card {
         min-height: 65vh;
@@ -134,12 +158,24 @@ h4 {
         height: 60vh;
     }
 }
+@media screen and (max-width:500px){
+    .prev {
+        left: 4%;
+    }
+    .next {
+        right: 6%;
+    }
+    .slide-btn button {
+        padding: 2rem 1rem;
+    }
+}
 @media screen and (max-width: 450px){
     .exp-card {
         min-height: 65vh;
         width: 100%;
         font-size: 1rem;
     }
+    
 }
 @media screen and (max-width: 400px) {
     .dock span {
@@ -148,6 +184,7 @@ h4 {
     }
     .exp-card {
         min-height: 65vh;
+        padding: 2rem;
         width: 90vw;
     }
     .exp-card h3, .exp-card h4 {
@@ -160,6 +197,47 @@ h4 {
     header .mail {
         font-size: 1.2rem;
     }
+    .prev {
+        left: 4%;
+        bottom: 10rem ;
+    }
+    .next {
+        right: 6%;
+        bottom: 10rem;
+    }
+    .slide-btn button {
+        background: #fff;
+        color: #070707;
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (max-width:380px){
+    .dock span {
+        position: fixed;
+        top: 84vh;
+        left: 4rem;
+        z-index: 100000;
+    }
+    .mini-links{
+        position: fixed;
+        z-index: 1000;
+        left: 5rem;
+    }
+}
+@media screen and (max-width:350px){
+    .prev {
+        left: 5%;
+    }
+    .next {
+        right: 9%;
+    }
+    .slide-btn button {
+        padding: 2rem 1rem;
+    }
+    .slide-btn button:hover {
+        background: #505050;
+        color: #fff;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -168,8 +246,19 @@ h4 {
         right: 10vw;
     }
     .exp-card {
-        min-height: 65vh;
+        min-height: 80vh;
         width: 100%;
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 312px){
+    .prev {
+       display: none;
+    }
+    .next {
+        right: 18%;
+    }
+    .slide-btn button {
+        padding: 2rem;
     }
 }

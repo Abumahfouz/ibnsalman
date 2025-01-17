@@ -95,6 +95,23 @@ body {
     .nav-links {
         width: 65vw;
     }
+    .projects {
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    .project-item {
+        height: 35vh;
+        max-width: 100%;
+        background-size: contain;
+    }
+    /* .project-text{
+        color: rgb(0, 215, 243);
+        font-size: 1.2rem;
+        text-shadow:0.05rem 0.05rem rgb(1, 76, 82);
+    } */
 }
 @media screen and (max-width: 900px) {
     .nav-links {
@@ -111,14 +128,67 @@ body {
     .title h1 {
         font-size: 3rem;
     }
-    .selfie {
-        height: 20rem;
-        width: 20rem;
+    .project-item {
+        height: 30vh;
+        max-width: 100%;
+        background-size: cover;
     }
 }
 @media screen and (max-width: 600px) {
     .nav-links {
         width: 100vw;
     }
-
+    .projects {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-between;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    .project-item {
+        height: 45vh;
+        max-width: 100%;
+        flex: 1 1 30rem;
+        background-size: contain;
+        background-color: rgb(126, 175, 168);
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+    .project-text{
+        font-size: 1.2rem;
+    }
+    .project-text a {
+        color: #fff;
+    }
+}
+@media screen and (max-width: 400px) {
+    .project-item {
+        height: 30vh;
+        max-width: 100%;
+        flex: 1 1 20rem;
+        background-size: cover;
+        background-color: rgb(21, 252, 217);
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:380px){
+    .mini-links{
+        position: fixed;
+        bottom:18vh;
+        left: 6vw;
+    }
+    .dock {
+        position: fixed;
+        z-index: 1000;
+        bottom: 5vh !important;
+    }
+    .dock span {
+        border-color: rgb(21, 252, 217);
+    }
+    .dock span i {
+        color: rgb(21, 252, 217);
+    }
 }

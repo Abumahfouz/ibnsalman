@@ -97,7 +97,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 @media screen and (max-width: 400px) {
     .dock span {
-        top: -95vh;
+        top: 85vh;
         right: 5vw;
     }
     .exp-card {
@@ -115,7 +115,7 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 1.2rem;
     }
     .skill-bars .left .flex-box,
-.skill-bars .right .flex-box {
+    .skill-bars .right .flex-box {
     justify-content: left;
     align-items: flex-start;
 }
@@ -124,10 +124,32 @@ input[type="range"]::-webkit-slider-thumb {
         border-radius: 3rem;
     }
 }
+@media screen and (max-width:380px){
+    .dock span {
+        top: 82vh;
+        border-color: rgb(0, 211, 211);
+    }
+    .mini-links {
+        left: 4rem;
+    }
+}
+@media screen and (max-width: 350px){
+    .dock span {
+        top: 85vh;
+        right: 1 !important;
+    }
+    .skill-bars input[type="range"] {
+        width: 20rem;
+    }
+    .flex-item-icon img{
+        height: 40px;
+        width: 40px;
+    }
+}
 @media screen and (max-width: 320px){
     .dock span {
-        top: -95vh;
-        right: 10vw;
+        top: 85vh;
+        right: 1 !important;
     }
     .skill-bars input[type="range"] {
         width: 15rem;

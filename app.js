@@ -38,7 +38,7 @@ const slideCards = (m)=>showCard(slideIndex = m);
 const plusCard = (m)=>showCard(slideIndex +=m);
 window.addEventListener('DOMContentLoaded', showCard(slideIndex));
 
-const burger_btn = document.querySelector('.dock');
-const mini_nav = document.querySelector('#peek');
-burger_btn.addEventListener('click', ()=> mini_nav.classList.toggle('hide'));
-window.addEventListener('keypress', ()=> mini_nav.classList.add('hide'));
+const menu_btn = document.querySelector('.dock');
+const menu_nav = document.querySelector('#peek');
+menu_btn.addEventListener('click', ()=> menu_nav.classList.toggle('hide'));
+window.addEventListener('keypress', ()=> menu_nav.classList.add('hide'));

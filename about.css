@@ -177,6 +177,15 @@ h3 {
         left: 5vw;
     }
 }
+@media screen and (max-width:380px) {
+    .dock span {
+        position: fixed;
+        top: 82vh;
+    }
+    .mini-links {
+        left: 4rem;
+    }
+}
 @media screen and (max-width: 315px) {
     h3 {
         display: none;

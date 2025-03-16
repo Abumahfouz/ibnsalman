@@ -37,6 +37,10 @@ body {
 .hidden {
     display: none;
 }
+.savoir {
+    background: #0e0e0e url('img/savoir9ja.png') center no-repeat;
+    background-size: contain;
+}
 .olam {
     background: #0e0e0e url('img/olam-group-recreation.jpg') center no-repeat;
     background-size: contain;
@@ -53,8 +57,8 @@ body {
     background: #0e0e0e url('img/doordash.jpg') center no-repeat;
     background-size: contain;
 }
-.n26{
-    background: #0e0e0e url('img/n26.jpg') center no-repeat;
+.guess{
+    background: #0e0e0e url('img/guess.png') center no-repeat;
     background-size: contain;
 }
 .palmpay {
@@ -65,8 +69,8 @@ body {
     background: #0e0e0e url('img/netflix.jpg') center no-repeat;
     background-size: contain;
 }
-.nirsal {
-    background: #0e0e0e url('img/nirsal-mfb.jpg') center no-repeat;
+.leonardo {
+    background: #0e0e0e url('img/leonardo.png') center no-repeat;
     background-size: contain;
 }
 .booking {

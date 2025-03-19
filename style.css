@@ -32,6 +32,7 @@ body {
 .selfie img{
     border-radius: 100%;
     width: 100%;
+    border: 0.3rem solid #fff;
 }
 header {
     justify-content: space-between;
